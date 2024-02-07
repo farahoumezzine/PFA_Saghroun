@@ -62,7 +62,7 @@
     </div>
     <div class="form-group">
         <button name="submit" type="submit" class="btn btn-primary">Submit</button>
-        <button href={{ route('cantine') }}"  class="btn btn-danger">Back</button>
+        <button href={{ route('cantine') }}" class="btn btn-danger">Back</button>
 
     </div>
 </form>
