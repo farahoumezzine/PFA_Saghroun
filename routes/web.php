@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Cantine;
+use App\Http\Controllers\RegisterChild;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,3 +20,5 @@ use App\Http\Controllers\Cantine;
 Route::get("/cantine",[Cantine::class,'liste_cantine'])->name("cantine");
 Route::get("/ajouter",[Cantine::class,'ajouter_cantine']);
 
+/*************************** Register CHILD *********************************/
+Route::get("/childForm",[RegisterChild::class,'formschild']);
