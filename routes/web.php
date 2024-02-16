@@ -22,3 +22,5 @@ Route::get("/ajouter",[Cantine::class,'ajouter_cantine']);
 
 /*************************** Register CHILD *********************************/
 Route::get("/childForm",[RegisterChild::class,'formschild']);
+Route::post("/ajouter/childForm",[RegisterChild::class,'formschild_ajouter'])->name('childForm.ajouter');
+

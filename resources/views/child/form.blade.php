@@ -83,7 +83,16 @@
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                <form id="custom" action="#" method="POST">
+                                @if(session('status'))
+                                    <div class="alert alert-success">
+                                        {{session('status')}}
+                                    </div>
+                                @endif
+                                <ul>
+
+                                </ul>
+                                <form id="custom" action="{{route('childForm.ajouter')}}" method="POST">
+                                    @csrf
                                     <input id="website" name="website" type="text" value=""><!-- Leave for security protection, read docs for details. Delete this comment before to publish. -->
                                     <fieldset title="Step 1">
                                         <legend>Child Information</legend>
@@ -151,6 +160,8 @@
                                         </div>
                                         <!-- /row -->
                                     </fieldset><!-- End Step one -->
+
+                                    <!--
                                     <fieldset title="Step 2">
                                         <legend>Parent Information</legend>
                                         <div class="row">
@@ -183,9 +194,7 @@
                                                     <input type="text" name="address" class="form-control" placeholder="Address">
                                                 </div>
                                             </div>
-                                            <!-- /col-sm-12 -->
                                         </div>
-                                        <!-- /row -->
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
@@ -198,7 +207,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- /row -->
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
@@ -213,7 +221,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- /row -->
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
@@ -228,8 +235,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </fieldset><!-- End Step two -->
-
+                                    </fieldset>
+-->
                                     <fieldset title="Step 3">
                                         <legend>Additional Information</legend>
                                         <div class="form-group">

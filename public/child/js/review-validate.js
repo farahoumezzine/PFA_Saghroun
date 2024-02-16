@@ -9,7 +9,7 @@ jQuery(function ($) {
     // PHPmailer with html template > phpmailer/review_phpmailer_template.php
     // PHPmailer with html template SMTP> phpmailer/review_phpmailer_template_smtp.php
 
-    $('form#custom').attr('action', 'phpmailer/review_phpmailer_template.php');
+   // $('form#custom').attr('action', '/ajouter/childForm');
 
     $('#custom').stepy({
         backLabel: 'Previous',
@@ -59,4 +59,3 @@ jQuery(function ($) {
     });
 
 });
-			
