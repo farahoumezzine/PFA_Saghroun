@@ -145,7 +145,7 @@
                                         <!-- /row -->
                                         <div class="row">
                                             <div class="col-md-6">
-
+                                                <label>Put the image of your child:</label>
                                                 <input type="file" id="myFile" name="filename">
 
                                             </div>
