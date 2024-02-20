@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 
     <!-- BASE CSS -->
-    <link href= "{{asset('child/css/bootstrap.min.css')}}"  rel="stylesheet">
+    <link href="{{asset('child/css/bootstrap.min.css')}}"  rel="stylesheet">
     <link href="{{asset('child/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('child/css/responsive.css')}}" rel="stylesheet">
     <link href="{{asset('child/css/menu.css')}}" rel="stylesheet">
