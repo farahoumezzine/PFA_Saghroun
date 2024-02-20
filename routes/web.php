@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Cantine;
 use App\Http\Controllers\RegisterChild;
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\TeacherController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,3 +28,5 @@ Route::post("/ajouter/childForm",[RegisterChild::class,'formschild_ajouter'])->n
 
 /*************************** Welcome *********************************/
 Route::get("/welcome",[WelcomeController::class,'welcome']);
+/*************************** Teacher *********************************/
+Route::get('/teacher',[TeacherController::class, 'teacher']);
