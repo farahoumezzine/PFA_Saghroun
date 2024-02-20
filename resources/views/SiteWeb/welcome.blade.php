@@ -1863,7 +1863,7 @@
                             <p class="template-margin-reset">
                                 Elipsis magna a nulla elite forte maecenas est elementum magna etos interdum movum morbi vehicula morbi.
                             </p>
-                            <img src="{{asset(('siteweb/media/image/logo_footer.png'))}}" class="template-footer-logo template-margin-top-2" alt="" />
+                            <img src="{{asset(('logo/LOGO_GREY.png'))}}" class="template-footer-logo template-margin-top-2" alt="" />
                         </div>
                     </div>
                 </li>
