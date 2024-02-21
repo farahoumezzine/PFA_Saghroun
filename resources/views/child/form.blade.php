@@ -266,7 +266,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <textarea name="special_permissions_instructions" rows="4" cols="50" placeholder="Enter any additional instructions or details about your child"></textarea>
+                                            <textarea name="message" rows="4" cols="50" placeholder="Enter any additional instructions or details about your child"></textarea>
                                         </div>
 
                                         <div class="form-group terms">
