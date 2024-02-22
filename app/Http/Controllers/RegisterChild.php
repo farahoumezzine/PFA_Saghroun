@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Child;
+use Brian2694\Toastr\Facades\Toastr;
 
 class RegisterChild extends Controller
 {
@@ -39,7 +40,10 @@ class RegisterChild extends Controller
         $child->message=$request->message;
 
         $child->save();
-        return redirect('/childForm')->with('status','child bien ajouté avec succée');
+
+        Toastr::success('Successfully registered!', 'Success');
+        return redirect('/childForm');
+        //return redirect('/childForm')->with('message','Child added Successfully');
 
 
     }

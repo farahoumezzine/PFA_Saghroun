@@ -13,8 +13,6 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('logo/LOGO.jpg')}}">
 
-
-
     <!-- GOOGLE WEB FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -34,6 +32,9 @@
 
     <script src="{{asset('child/js/modernizr.js')}}"></script>
     <!-- Modernizr -->
+
+    <!-- Toastr CSS -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
 </head>
 
 <body>
@@ -41,6 +42,8 @@
 <div id="preloader">
     <div data-loader="circle-side"></div>
 </div><!-- /Preload -->
+
+
 
 <div class="min-vh-100 d-flex flex-column">
 
@@ -83,11 +86,8 @@
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                @if(session('status'))
-                                    <div class="alert alert-success">
-                                        {{session('status')}}
-                                    </div>
-                                @endif
+                                <!-- Session -->
+
                                 <ul>
 
                                 </ul>
@@ -288,9 +288,6 @@
         </main>
     </div>
     <!-- /flex-column -->
-
-
-
 </div>
 <!-- /flex-column -->
 
@@ -368,7 +365,7 @@
                 <p><strong>2-What are your operating hours?</strong><br> We operate from <strong>7h30</strong> to<strong> 18h30</strong> on 6 days per week. We also offer extended care options for families who require childcare outside of regular hours (on demand).</p>
                 <p><strong>3-What are the qualifications and experience of your teachers and staff?</strong> <br>Our teachers and staff are highly qualified and experienced in early childhood education. They undergo continuous professional development to stay updated on best practices in early childhood pedagogy.</p>
 
-                <div class="modal-footer">
+                <div class="modal-footer"></div>
                 <button type="button" class="btn_1" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
@@ -379,6 +376,11 @@
 <!-- /.modal -->
 
 <!-- SCRIPTS -->
+
+<!-- toaster notif -->
+<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+{!! Toastr::message() !!}
 
 <script>
     function showAllergies() {
@@ -411,6 +413,8 @@
 <script src="{{asset('child/js/main.js')}}"></script>
 <!-- Theme script -->
 <script src="{{asset('child/js/functions.js')}}"></script>
+
+
 
 </body>
 
