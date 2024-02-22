@@ -212,7 +212,7 @@
                              data-splitout="none"
                              data-responsive_offset="on"
                              style="z-index:10;">
-                            <a href="#" target="_top" class="template-component-button template-component-button-style-1">Register NOW</a>
+                            <a href={{ route('childForm') }} class="template-component-button template-component-button-style-1">Register NOW</a>
                         </div>
 
                         <!-- Layer nr. 7 -->
@@ -468,7 +468,7 @@
                              data-splitout="none"
                              data-responsive_offset="on"
                              style="z-index:10;">
-                            <a href="#" target="_top" class="template-component-button template-component-button-style-1">Register NOW</a>
+                            <a href={{ route('childForm') }} target="_top" class="template-component-button template-component-button-style-1">Register NOW</a>
                         </div>
 
                         <!-- Layer nr. 7 -->
@@ -675,7 +675,7 @@
                              data-splitout="none"
                              data-responsive_offset="on"
                              style="z-index:11;">
-                            <a href="#" target="_top" class="template-component-button template-component-button-style-1">Register NOW</a>
+                            <a href={{ route('childForm') }} target="_top" class="template-component-button template-component-button-style-1">Register NOW</a>
                         </div>
 
                         <!-- Layer nr. 8 -->
