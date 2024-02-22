@@ -41,7 +41,7 @@ class RegisterChild extends Controller
 
         $child->save();
 
-        Toastr::success('Successfully registered!', 'Success');
+        Toastr::success('Child Successfully registered!', 'Success',["positionClass" => "toast-top-center"]);
         return redirect('/childForm');
         //return redirect('/childForm')->with('message','Child added Successfully');
 
