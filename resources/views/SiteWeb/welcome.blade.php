@@ -156,7 +156,7 @@
                              data-splitin="none"
                              data-splitout="none"
                              data-responsive_offset="on"
-                             style="z-index:7;white-space:nowrap;color:rgba(254,101,0,1.00);border-color:rgba(86,80,159,1.00);">Welcome to Fable!
+                             style="z-index:7;white-space:nowrap;color:rgba(254,101,0,1.00);border-color:rgba(86,80,159,1.00);">Welcome to Saghroun!
                         </div>
 
                         <!-- Layer nr. 4 -->
@@ -212,7 +212,7 @@
                              data-splitout="none"
                              data-responsive_offset="on"
                              style="z-index:10;">
-                            <a href="http://themeforest.net/user/quanticalabs/portfolio?ref=quanticalabs" target="_top" class="template-component-button template-component-button-style-1"></a>
+                            <a href={{ route('childForm') }} class="template-component-button template-component-button-style-1">Register NOW</a>
                         </div>
 
                         <!-- Layer nr. 7 -->
@@ -468,7 +468,7 @@
                              data-splitout="none"
                              data-responsive_offset="on"
                              style="z-index:10;">
-                            <a href="http://themeforest.net/user/quanticalabs/portfolio?ref=quanticalabs" target="_top" class="template-component-button template-component-button-style-1"></a>
+                            <a href={{ route('childForm') }} target="_top" class="template-component-button template-component-button-style-1">Register NOW</a>
                         </div>
 
                         <!-- Layer nr. 7 -->
@@ -675,7 +675,7 @@
                              data-splitout="none"
                              data-responsive_offset="on"
                              style="z-index:11;">
-                            <a href="http://themeforest.net/user/quanticalabs/portfolio?ref=quanticalabs" target="_top" class="template-component-button template-component-button-style-1"></a>
+                            <a href={{ route('childForm') }} target="_top" class="template-component-button template-component-button-style-1">Register NOW</a>
                         </div>
 
                         <!-- Layer nr. 8 -->
@@ -928,8 +928,8 @@
 
             <!-- Header and subheader -->
             <div class="template-component-header-subheader">
-                <h2>Welcome to Fable</h2>
-                <h6>Fable daycare, preschool, and kindergarten</h6>
+                <h2>Welcome to Saghroun</h2>
+                <h6>Saghroun daycare, preschool, and kindergarten</h6>
                 <div></div>
             </div>
 
@@ -1040,7 +1040,7 @@
                     <!-- Nivo slider -->
                     <div class="template-component-nivo-slider template-component-nivo-slider-style-1 template-preloader">
                         <div>
-                            <img src="{{asset('siteweb/siteweb/media/image/_sample/690x506/10.jpg')}}" data-thumb="media/image/_sample/690x506/10.jpg" alt=""/>
+                            <img src="{{asset('siteweb/media/image/_sample/690x506/10.jpg')}}" data-thumb="media/image/_sample/690x506/10.jpg" alt=""/>
                             <img src="{{asset('siteweb/media/image/_sample/690x506/5.jpg')}}" data-thumb="media/image/_sample/690x506/5.jpg" alt=""/>
                             <img src="{{asset('siteweb/media/image/_sample/690x506/11.jpg')}}" data-thumb="media/image/_sample/690x506/11.jpg" alt=""/>
                         </div>
@@ -1470,7 +1470,7 @@
                             </li>
                             <li class="template-layout-column-right">
                                 <div class="template-component-team-quote"></div>
-                                <p class="template-component-team-description">I have just finished my studies in Early Childhood Education, and I am also the kidâ€™s yoga teacher here at Fable. I enjoy cooking, swimming and bike riding in my free time.</p>
+                                <p class="template-component-team-description">I have just finished my studies in Early Childhood Education, and I am also the kidâ€™s yoga teacher here at Saghroun. I enjoy cooking, swimming and bike riding in my free time.</p>
                                 <div class="template-component-social-icon template-component-social-icon-style-1 template-clear-fix">
                                     <ul>
                                         <li><a href="#" class="template-component-social-icon-forrst"></a></li>
@@ -1498,7 +1498,7 @@
                             </li>
                             <li class="template-layout-column-right">
                                 <div class="template-component-team-quote"></div>
-                                <p class="template-component-team-description">My name is Katie. I grew up and studied in Canada. This is my second year at Fable and love every minute of it, making the childrenâ€™s learning experience fun.</p>
+                                <p class="template-component-team-description">My name is Katie. I grew up and studied in Canada. This is my second year at Saghroun and love every minute of it, making the childrenâ€™s learning experience fun.</p>
                                 <div class="template-component-social-icon template-component-social-icon-style-1 template-clear-fix">
                                     <ul>
                                         <li><a href="#" class="template-component-social-icon-googleplus"></a></li>
@@ -1554,7 +1554,7 @@
                             </li>
                             <li class="template-layout-column-right">
                                 <div class="template-component-team-quote"></div>
-                                <p class="template-component-team-description">I have completed a Graduate Diploma in Early Childhood Teaching. I have worked with children aged from six weeks to eight years. This is my second year at Fable.</p>
+                                <p class="template-component-team-description">I have completed a Graduate Diploma in Early Childhood Teaching. I have worked with children aged from six weeks to eight years. This is my second year at Saghroun.</p>
                                 <div class="template-component-social-icon template-component-social-icon-style-1 template-clear-fix">
                                     <ul>
                                         <li><a href="#" class="template-component-social-icon-pinterest"></a></li>
@@ -1582,7 +1582,7 @@
                     <ul class="template-layout-100">
                         <li class="template-layout-column-left">
                             <i></i>
-                            <p>Fable Kindergarten is a great place for my daughter to start her schooling experience. Itâ€™s welcoming and safe and my daughter loves being there.</p>
+                            <p>Saghroun Kindergarten is a great place for my daughter to start her schooling experience. Itâ€™s welcoming and safe and my daughter loves being there.</p>
                             <div></div>
                             <span>Fredric Greene</span>
                         </li>
@@ -1600,13 +1600,13 @@
                         </li>
                         <li class="template-layout-column-left">
                             <i></i>
-                            <p>Fable Kindergarten is a great place for my daughter to start her schooling experience. Itâ€™s welcoming and safe and my daughter loves being there.</p>
+                            <p>Saghroun Kindergarten is a great place for my daughter to start her schooling experience. Itâ€™s welcoming and safe and my daughter loves being there.</p>
                             <div></div>
                             <span>Shelia Perry</span>
                         </li>
                         <li class="template-layout-column-left">
                             <i></i>
-                            <p>This letter is to recognize you and your staff for doing an excellent job teaching my son. His skill level is significantly better since attending Fable.</p>
+                            <p>This letter is to recognize you and your staff for doing an excellent job teaching my son. His skill level is significantly better since attending Saghroun.</p>
                             <div></div>
                             <span>Tony I. Robinette</span>
                         </li>
@@ -1749,7 +1749,7 @@
                         <div class="template-icon-feature template-icon-feature-name-envelope-alt"></div>
                         <h5>Postal Address</h5>
                         <p>
-                            Fable Care Center<br/>
+                            Saghroun Care Center<br/>
                             85 Fentiman Ave<br/>
                             Ottawa, ON K1S 0T7
                         </p>
@@ -1863,7 +1863,7 @@
                             <p class="template-margin-reset">
                                 Elipsis magna a nulla elite forte maecenas est elementum magna etos interdum movum morbi vehicula morbi.
                             </p>
-                            <img src="{{asset(('siteweb/media/image/logo_footer.png'))}}" class="template-footer-logo template-margin-top-2" alt="" />
+                            <img src="{{asset(('logo/LOGO_GREY.png'))}}" class="template-footer-logo template-margin-top-2" alt="" />
                         </div>
                     </div>
                 </li>

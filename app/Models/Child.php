@@ -4,11 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Child extends Model
 {
+    use SoftDeletes;
     protected $fillable = [
-        'firstname', 'lastname', 'dateofbirth','filename','gender'
+        'firstname', 'lastname','activities','dateofbirth','filename','gender','allergies','conditions','message'
     ];
 
     use HasFactory;

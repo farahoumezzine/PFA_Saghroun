@@ -32,9 +32,10 @@ jQuery(function ($) {
         rules: {
             'firstname': 'required',
             'lastname': 'required',
+            'gender': 'required',
             'dateofbirth' : 'required',
             'filename' : 'required',
-
+            'activities[]': 'required',
             'relation':'required',
             'email': 'required',
             'telephone': 'required',
@@ -49,7 +50,8 @@ jQuery(function ($) {
             'lastname': { required: 'Last name required' },
             'dateofbirth' : { required: 'Date of birth required' },
             'filename' : { required: 'Iamge required' },
-
+            'activities[]' : { required: 'You have to select at least one activity for your child' },
+            'gender': { required: 'Gender required' },
 
             'email': { required: 'Invalid e-mail!' },
             'telephone': { required: 'Telephone required' },

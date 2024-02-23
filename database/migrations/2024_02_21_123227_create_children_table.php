@@ -20,9 +20,17 @@ class CreateChildrenTable extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->date('dateofbirth');
-           // $table->text('activities[]');
+            $table->string('activities');
             $table->string('filename');
             $table->string('gender');
+
+            $table->string('allergies')->nullable();
+            $table->string('conditions')->nullable();
+            $table->string('message')->nullable();
+
+
+
+            $table->softDeletes();
 
 
 

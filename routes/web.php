@@ -23,7 +23,7 @@ Route::get("/cantine",[Cantine::class,'liste_cantine'])->name("cantine");
 Route::get("/ajouter",[Cantine::class,'ajouter_cantine']);
 
 /*************************** Register CHILD *********************************/
-Route::get("/childForm",[RegisterChild::class,'formschild']);
+Route::get("/childForm",[RegisterChild::class,'formschild'])->name('childForm');
 Route::post("/ajouter/childForm",[RegisterChild::class,'formschild_ajouter'])->name('childForm.ajouter');
 
 /*************************** Welcome *********************************/
