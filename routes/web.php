@@ -6,6 +6,7 @@ use App\Http\Controllers\RegisterChild;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\RegisterTeacher;
+use App\Http\Controllers\Login;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,4 +35,6 @@ Route::get('/teacher',[TeacherController::class, 'teacher']);
 /*************************** Register Teacher *********************************/
 Route::get("/teacherForm", [RegisterTeacher::class, 'formsteacher'])->name('teacherForm');
 Route::post("/ajouter/teacherForm", [RegisterTeacher::class, 'formsteacher_ajouter'])->name('teacherForm.ajouter');
+/*************************** Login Teacher *********************************/
+Route::get("/loginUser", [Login::class, 'login']);
 
