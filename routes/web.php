@@ -5,6 +5,7 @@ use App\Http\Controllers\Cantine;
 use App\Http\Controllers\RegisterChild;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\RegisterTeacher;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,3 +31,7 @@ Route::post("/ajouter/childForm",[RegisterChild::class,'formschild_ajouter'])->n
 Route::get("/welcome",[WelcomeController::class,'welcome']);
 /*************************** Teacher *********************************/
 Route::get('/teacher',[TeacherController::class, 'teacher']);
+/*************************** Register Teacher *********************************/
+Route::get("/teacherForm", [RegisterTeacher::class, 'formsteacher'])->name('teacherForm');
+Route::post("/ajouter/teacherForm", [RegisterTeacher::class, 'formsteacher_ajouter'])->name('teacherForm.ajouter');
+
