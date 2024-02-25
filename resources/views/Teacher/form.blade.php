@@ -144,6 +144,19 @@
                                                     <input type="date" name="dateofbirth" class="form-control" placeholder="Date of Birth">
                                                 </div>
                                             </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="password" name="password" class="form-control" placeholder="Password" autocomplete="new-password">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+
+                                                    <input type="password" name="confirmpassword" class="form-control" placeholder="Confirm Password" autocomplete="new-password">
+
+                                                </div>
+                                            </div>
 
                                             <div class="col-md-6">
                                                 <div class="form-group">
@@ -210,6 +223,7 @@
 
                                         </div>
                                         <!-- /row -->
+                                        </div>
                                     </fieldset><!-- End Step one -->
 
 

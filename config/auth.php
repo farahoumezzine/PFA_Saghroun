@@ -65,11 +65,14 @@ return [
     |
     */
 
-    'providers' => [
-        'users' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\User::class,
-        ],
+
+        'providers' => [
+            'users' => [
+                'driver' => 'eloquent',
+                'model' => App\Models\Teacher::class, // Utilisez le modèle Teacher au lieu de User
+            ],
+
+
 
         // 'users' => [
         //     'driver' => 'database',

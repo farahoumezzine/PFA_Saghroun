@@ -96,18 +96,18 @@
     <div class="wrapper">
         <div class="inner">
             <img src="{{asset('login/images/image-1.png')}}" alt="" class="image-1">
-            <form action="" style="position: relative;
-    z-index: 1;
-">
+
+            <form action="{{route('login')}}" method="post" style="position: relative;z-index: 1;">
+                @csrf
                 <h3>Login Account</h3>
 
                 <div class="form-holder"  >
                     <span class="lnr lnr-envelope" style="margin-right: 10px;" ></span>
-                    <input type="text" class="form-control" placeholder="Mail" style="padding-left: 20px;">
+                    <input type="text" name="email" class="form-control" placeholder="Mail" autocomplete="username" style="padding-left: 20px;">
                 </div>
                 <div class="form-holder">
                     <span class="lnr lnr-lock" style="margin-right: 10px;"></span>
-                    <input type="password" class="form-control" placeholder="Password" style="padding-left: 20px;">
+                    <input type="password" name="password" class="form-control" placeholder="Password" autocomplete="current-password" style="padding-left: 20px;">
                 </div>
 
                 <button>
@@ -163,6 +163,7 @@
 
 
 
+</div>
 </body>
 
 </html>

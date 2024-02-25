@@ -56,7 +56,7 @@
                     <ul class="sf-menu template-clear-fix">
                         <li><a href="#home"><span class="template-icon-menu template-icon-menu-home"></span>Home</a></li>
                         <li><a href="#about"><span class="template-icon-menu template-icon-menu-book"></span>About</a></li>
-                        <li><a href="#classes"><span class="template-icon-menu template-icon-menu-schoolbag template-state-selected"></span>Classes</a></li>
+                        <li><a href="#classes"><span class="template-icon-menu template-icon-menu-schoolbag "></span>Classes</a></li>
                         <li><a href="#teachers"><span class="template-icon-menu template-icon-menu-diagram"></span>Teachers</a></li>
                         <li><a href="#blog"><span class="template-icon-menu template-icon-menu-printer"></span>Blog</a></li>
                         <li><a href="#contact"><span class="template-icon-menu template-icon-menu-envelope"></span>Contact</a></li>
@@ -91,13 +91,19 @@
 
         <div class="template-header-bottom-background template-header-bottom-background-img-4 template-header-bottom-background-style-1">
             <div class="template-main">
+
                 <h1>Ruth Foster</h1>
                 <h6>Single Teacher Page</h6>
             </div>
         </div>
-    </div>
+            <!-- LOGOUT-->
+            <form action="{{route('logout')}}" method="post" class="d-flex" role="search">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger" >LogOut</button>
+            </form>
 
-</div>
+    </div>
 <!-- Content -->
 <div class="template-content">
 
@@ -116,9 +122,11 @@
                                     <span><span><span></span></span></span>
                                 </a>
                                 <div>
+
                                     <h6>Ruth Foster</h6>
                                     <span>Teacher</span>
                                 </div>
+
                                 <p><b>Ruth Foster</b> Teacher</p>
                             </div>
                             <div class="template-component-social-icon template-component-social-icon-style-1 template-clear-fix">
@@ -130,7 +138,10 @@
                             </div>
                         </li>
                         <li class="template-layout-column-right">
-                            <h3 class="template-component-team-name">Ruth Richie</h3>
+                            <!-- user name -->
+                            @if(Auth::check())
+                                <h3 class="template-component-team-name">{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}</h3>
+                            @endif
                             <span class="template-component-team-position">Teacher</span>
                             <p class="template-component-team-description">My name is Ruth. I grew up and studied in Canada. This is my second year at Fable and love every minute of it, making the children’s learning experience fun. I love giving children opportunities to make discoveries about their world by providing them with the time and space to explore.</p>
                             <h6 class="template-margin-top-3">Personal Info</h6>

@@ -6,7 +6,7 @@ use App\Http\Controllers\RegisterChild;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\RegisterTeacher;
-use App\Http\Controllers\Login;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,10 +31,30 @@ Route::post("/ajouter/childForm",[RegisterChild::class,'formschild_ajouter'])->n
 /*************************** Welcome *********************************/
 Route::get("/welcome",[WelcomeController::class,'welcome']);
 /*************************** Teacher *********************************/
-Route::get('/teacher',[TeacherController::class, 'teacher']);
+
 /*************************** Register Teacher *********************************/
 Route::get("/teacherForm", [RegisterTeacher::class, 'formsteacher'])->name('teacherForm');
 Route::post("/ajouter/teacherForm", [RegisterTeacher::class, 'formsteacher_ajouter'])->name('teacherForm.ajouter');
 /*************************** Login Teacher *********************************/
-Route::get("/loginUser", [Login::class, 'login']);
+Route::get("/loginUser", [RegisterTeacher::class, 'login'])->name('login');
+Route::post("/loginUser", [RegisterTeacher::class, 'loginpost'])->name('login');
+/***************************   *********************************/
+Route::group(['middleware' => 'auth'], function (){
+    Route::get('/teacher',[TeacherController::class, 'teacher']);
+    Route::delete("/logout", [RegisterTeacher::class, 'logoutpost'])->name('logout');
+});
 
+
+
+
+
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
