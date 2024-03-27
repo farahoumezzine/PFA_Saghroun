@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Cantine;
 use App\Http\Controllers\RegisterChild;
@@ -27,3 +28,7 @@ Route::post("/ajouter/childForm",[RegisterChild::class,'formschild_ajouter'])->n
 
 /*************************** Welcome *********************************/
 Route::get("/welcome",[WelcomeController::class,'welcome']);
+
+
+/*************************** Dashboard Parent *********************************/
+Route::get("/Dashboard_Parents",[DashboardController::class,'showDashboard'])->name("Parent");
